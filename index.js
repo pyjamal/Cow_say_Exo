@@ -1,11 +1,10 @@
-const informationUser = require('./information.js')
+const myInformation = require('./information');
 
-informationUser;
-
-var cowsay = require("cowsay");
+const cowsay = require("cowsay");
 
 console.log(cowsay.say({
-	text : "I'm a moooodule",
+	text : `I'm ${myInformation.nom} from ${myInformation.campus}`,
 	e : "oO",
 	T : "U "
 }));
+
